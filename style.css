@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stopwatch {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    min-width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top: 15rem;
+    background-color: #96e99a;
+}
+
+.display {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.buttons button:active {
+    background-color: #3e8e41;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #d23332;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #20b380;
+}
