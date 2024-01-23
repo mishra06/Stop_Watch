@@ -11,6 +11,7 @@ const countDisplay = document.getElementById('count');
 const startBtn = document.getElementById('button-start');
 const stopBtn = document.getElementById('button-stop');
 const resetBtn = document.getElementById('button-reset');
+const lapbtn = document.querySelector("#button-lap");
 
 startBtn.addEventListener('click', function () {
     timer = true;
@@ -31,7 +32,20 @@ resetBtn.addEventListener('click', function () {
     minuteDisplay.innerHTML = "00";
     secondDisplay.innerHTML = "00";
     countDisplay.innerHTML = "00";
+//    lapbtn.innerText =" ";
 });
+
+const rec = document.querySelector(".laps");
+
+
+lapbtn.addEventListener('click', function(){
+
+    let p = document.createElement("p");
+    p.innerText = ` ${minute}:${second} :${count}`;
+    p.classList.add("p_css");
+    rec.appendChild(p);
+
+})
 
 function stopWatch() {
     if (timer) {
