@@ -32,18 +32,24 @@ resetBtn.addEventListener('click', function () {
     minuteDisplay.innerHTML = "00";
     secondDisplay.innerHTML = "00";
     countDisplay.innerHTML = "00";
-//    lapbtn.innerText =" ";
+   
 });
 
 const rec = document.querySelector(".laps");
 
 
 lapbtn.addEventListener('click', function(){
-
     let p = document.createElement("p");
+
+    if(count>0){    
     p.innerText = ` ${minute}:${second} :${count}`;
     p.classList.add("p_css");
     rec.appendChild(p);
+    }
+    else alert("please start :( ...!!!");
+    
+
+    
 
 })
 
